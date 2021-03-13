@@ -148,20 +148,28 @@
             </div>
             <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                 <div class="col-md-6">
-                    <form>
+                    <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                        <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <form name="contact-portfolio">
                         <div class="mb-3">
                             <label for="name" class="form-label">Nama Lengkap</label>
-                            <input type="text" class="form-control" id="name" aria-describedby="name">
+                            <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="email">
+                            <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
                         </div>
                         <div class="mb-3">
                             <label for="pesan" class="form-label">Pesan</label>
-                            <textarea class="form-control" id="pesan" rows="3"></textarea>
+                            <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-dark">Kirim Pesan</button>
+                        <button type="submit" class="btn btn-dark btn-kirim">Kirim Pesan</button>
+                        <button class="btn btn-dark btn-loading d-none" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            Loading...
+                          </button>
                     </form>
                 </div>
             </div>
@@ -191,6 +199,31 @@
         AOS.init();
     </script>
     <script src="load.js "></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzmPz71TNbaeX4KdSM4ckQs4wmTd7U8XBeEH0pFfYOoZ20SwlKSvteGOLviDeoOgOJT/exec'
+        const form = document.forms['contact-portfolio']
+        const btnKirim = document.querySelector('.btn-kirim');
+        const btnLoading = document.querySelector('.btn-loading');
+        const myAlert = document.querySelector('.my-alert');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    btnLoading.classList.toggle('d-none');
+                    btnKirim.classList.toggle('d-none');
+                    myAlert.classList.toggle('d-none');
+                    form.reset();
+                    console.log('Success!', response)
+                })
+                .catch(error => console.error('Error!', error.message))
+        });
+    </script>
 </body>
 
 </html>
