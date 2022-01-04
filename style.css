@@ -1,14 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 * {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    margin: 0px 0px;
+    padding: 0px 0px;
 }
 
 body {
-    min-height: 3000px;
+    min-height: auto;
 }
 
 .jumbotron {
     padding-top: 6rem;
     background-color: #273036;
+    width: 100%;
+    height: 100vh;
+}
+
+#about {
+    width: 100%;
+    height: 100vh;
 }
 
 #certificate {

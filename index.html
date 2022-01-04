@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- my CSS -->
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/personal.jpg">
+    <link rel="icon" href="img/profile/personal.jpg">
     <title>Portfolio | Muhamad Arief Rahmatulloh</title>
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
@@ -39,6 +39,9 @@
                         <a class="nav-link" href="#certificate">Sertifikat</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#skill">Keterampilan</a>
                     </li>
                     <li class="nav-item">
@@ -52,79 +55,93 @@
     <!-- Jumbotron -->
     <section class="jumbotron text-center text-white bg bg-gradient" id="home">
         <div class="container">
-            <img src="img/personal.jpg" alt="Muhamad Arief Rahmatulloh" width="200" class="rounded-circle img-thumbnail" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+            <img src="img/profile/personal.jpg" alt="Muhamad Arief Rahmatulloh" width="200" class="rounded-circle img-thumbnail" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
             <h1 class="display-4 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Muhamad Arief Rahmatulloh</h1>
             <p class="lead" data-aos="fade-up" data-aos-duration="1000">Mahasiswa | STT Mandala Bandung</p>
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-0 ms-auto fs-4 text-center">
+                    <a href="https://instagram.com/muhamadariefr/" class="instagram text-decoration-none text-secondary" data-aos="fade-up " data-aos-duration="1000 " data-aos-once="true "><i class="bi bi-instagram "></i></i></a>
+                    <a href="https://facebook.com " class="facebook text-decoration-none text-secondary" data-aos="fade-up " data-aos-duration="1400 " data-aos-once="true "><i class="bi bi-facebook "></i></a>
+                    <a href="https://www.linkedin.com/in/muhamad-arief-rahmatulloh-b04a66207 " class="linkedin text-decoration-none text-secondary"><i class="bi bi-linkedin " data-aos="fade-up " data-aos-duration="2000 " data-aos-once="true "></i></a>
+                </div>
+            </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,122.7C96,149,192,203,288,197.3C384,192,480,128,576,122.7C672,117,768,171,864,165.3C960,160,1056,96,1152,58.7C1248,21,1344,11,1392,5.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
     <!-- Akhir Jumbotron -->
     <!-- About -->
     <section id="about">
-        <div class="container mt-5">
+        <div class="container mt-5 mb-5">
             <div data-aos="fade-up" data-aos-duration="800" data-aos-once="true" class="row text-center mb-3">
                 <div class="col">
                     <h2>Biodata</h2>
                 </div>
             </div>
             <div class="d-flex justify-content-center fs-5" data-aos="fade-up" data-aos-duration="900" data-aos-once="true">
-                <div class="d-flex justify-content-center">
-                    <div class="d-block justify-content-start">
-                        <span class="d-block p-1">
-                            Nama 
-                        </span>
-                        <span class="d-block p-1">
-                            Tempat Lahir
-                        </span>
-                        <span class="d-block p-1">
-                            Tanggal Lahir
-                        </span>
-                        <span class="d-block p-1">
-                            No. HP 
-                        </span>
-                        <span class="d-block p-1">
-                            Pekerjaan  
-                        </span>
-                        <span class="d-block p-1">
-                            Alamat  
-                        </span>
-                        <span class="d-block p-1">
-                            Hobi  
-                        </span>
-                        <span class="d-block p-1">
-                            Agama  
-                        </span>
-                    </div>
-                    <div class="d-block justify-content-start">
-                        <span class="d-block p-1">
-                            : Muhamad Arief Rahmatulloh
-                        </span>
-                        <span class="d-block p-1">
-                            : Depok, Jawa Barat
-                        </span>
-                        <span class="d-block p-1">
-                            : 17 Februari 2002 
-                        </span>
-                        <span class="d-block p-1">
-                            : 081322751816
-                        </span>
-                        <span class="d-block p-1">
-                            : Pelajar/Mahasiswa 
-                        </span>
-                        <span class="d-block p-1">
-                            : Rancaekek, Kabupaten Bandung 
-                        </span>
-                        <span class="d-block p-1">
-                            : Menggambar, Ngoding, Desain
-                        </span>
-                        <span class="d-block p-1">
-                            : Islam
-                        </span>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="img/profile/profile.svg" class="img-thumbnail border-0" alt="...">
+                        </div>
+                        <div class="col-sm">
+                            <div class="d-flex justify-content-center">
+                                <div class="d-block justify-content-start">
+                                    <span class="d-block p-1">
+                                        Nama 
+                                    </span>
+                                    <span class="d-block p-1">
+                                        Tempat Lahir
+                                    </span>
+                                    <span class="d-block p-1">
+                                        Tanggal Lahir
+                                    </span>
+                                    <span class="d-block p-1">
+                                        No. HP 
+                                    </span>
+                                    <span class="d-block p-1">
+                                        Pekerjaan  
+                                    </span>
+                                    <span class="d-block p-1">
+                                        Alamat  
+                                    </span>
+                                    <span class="d-block p-1">
+                                        Hobi  
+                                    </span>
+                                    <span class="d-block p-1">
+                                        Agama  
+                                    </span>
+                                </div>
+                                <div class="d-block justify-content-start">
+                                    <span class="d-block p-1">
+                                        : Muhamad Arief Rahmatulloh
+                                    </span>
+                                    <span class="d-block p-1">
+                                        : Depok, Jawa Barat
+                                    </span>
+                                    <span class="d-block p-1">
+                                        : 17 Februari 2002 
+                                    </span>
+                                    <span class="d-block p-1">
+                                        : 081322751816
+                                    </span>
+                                    <span class="d-block p-1">
+                                        : Pelajar/Mahasiswa 
+                                    </span>
+                                    <span class="d-block p-1">
+                                        : Rancaekek, Kabupaten Bandung 
+                                    </span>
+                                    <span class="d-block p-1">
+                                        : Menggambar, Ngoding, Desain
+                                    </span>
+                                    <span class="d-block p-1">
+                                        : Islam
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,256L48,245.3C96,235,192,213,288,218.7C384,224,480,256,576,240C672,224,768,160,864,165.3C960,171,1056,245,1152,272C1248,299,1344,277,1392,266.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
     <!-- Akhir About -->
 
@@ -205,7 +222,7 @@
                 <div class="col-md-4 mb-3">
                     <div class="card">
                         <button type="button" class="btn btn-white shadow-none" data-bs-toggle="modal" data-bs-target="#epic4">
-                            <img src="img/certificate/Dicoding IDCamp 2019 Virtual Graduation Day Certificate.png" class="img-thumbnail" alt="">
+                            <img src="img/certificate/Dicoding AWS Cloud.png" class="img-thumbnail" alt="">
                         </button>
 
                         <!-- Modal -->
@@ -216,7 +233,7 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <img src="img/certificate/Dicoding IDCamp 2019 Virtual Graduation Day Certificate.png" class="img-fluid" alt="">
+                                        <img src="img/certificate/Dicoding AWS Cloud.png" class="img-fluid" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -226,7 +243,7 @@
                 <div class="col-md-4 mb-3">
                     <div class="card">
                         <button type="button" class="btn btn-white shadow-none" data-bs-toggle="modal" data-bs-target="#epic5">
-                            <img src="img/certificate/Dicoding Baparekraf Developer Day 2020 Certificate.png" class="img-thumbnail" alt="">
+                            <img src="img/certificate/Dicoding Bahasa C.png" class="img-thumbnail" alt="">
                         </button>
 
                         <!-- Modal -->
@@ -237,7 +254,7 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <img src="img/certificate/Dicoding Baparekraf Developer Day 2020 Certificate.png" class="img-fluid" alt="">
+                                        <img src="img/certificate/Dicoding Bahasa C.png" class="img-fluid" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -351,12 +368,13 @@
                 </div>
             </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill=" #fff" fill-opacity="1" d="M0,32L48,42.7C96,53,192,75,288,101.3C384,128,480,160,576,154.7C672,149,768,107,864,101.3C960,96,1056,128,1152,138.7C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L48,234.7C96,245,192,267,288,229.3C384,192,480,96,576,74.7C672,53,768,107,864,154.7C960,203,1056,245,1152,229.3C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
     <!-- Akhir Sertifikat -->
 
     <!-- Skill -->
     <section id="skill">
+
         <div class="container">
             <div class="row text-center mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
                 <div class="col">
