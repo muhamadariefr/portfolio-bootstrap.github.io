@@ -10,14 +10,50 @@ body {
 
 .jumbotron {
     padding-top: 6rem;
-    background-color: #273036;
     width: 100%;
     height: 100vh;
 }
 
+.home {
+    width: 100%;
+    display: flex;
+}
+
+.right {
+    width: 60%;
+    margin-top: 100px;
+}
+
+.left {
+    width: 40%;
+    margin-top: 100px;
+    padding: 20px 0 20px 0;
+}
+
+.lead-2 {
+    padding-bottom: 100px;
+    font-family: sans-serif;
+}
+
+.socmed {
+    font-size: 20px;
+    font-family: url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+    margin: 25px 0 0 0;
+}
+
+.display-4 {
+    font-size: 45px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
 #about {
     width: 100%;
-    height: 100vh;
+}
+
+#portfolio {
+    background-color: #273036;
+    height: auto;
+    padding: 50px 0px 50px 0px;
 }
 
 #certificate {
@@ -29,7 +65,7 @@ section {
 }
 
 .bg {
-    background-color: #273036;
+    background-color: #fff;
 }
 
 .instagram,
@@ -39,6 +75,19 @@ section {
 .whatsapp,
 .linkedin {
     color: #273036;
+}
+
+.instagram2,
+.facebook2,
+.linkedin2 {
+    color: rgb(128, 125, 125);
+}
+
+.instagram2:hover,
+.facebook2:hover,
+.linkedin2:hover {
+    color: #fff;
+    transition: 0.3s;
 }
 
 #preloader {
@@ -86,15 +135,50 @@ section {
 }
 
 @media only screen and (max-width: 600px) {
-    .jumbotron h1 {
+    .jumbotron {
+        height: auto;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .home {
+        display: block;
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    .left,
+    .right {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .display-4 {
         font-size: 25px;
+        text-align: center;
+    }
+    .socmed {
+        font-size: 15px;
+    }
+    .lead {
+        font-size: 18px;
+        text-align: center;
+    }
+    .lead-2 {
+        font-size: 15px;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .btn-download {
+        margin: auto;
+        text-align: center;
+        padding-bottom: 20px;
     }
     .bio,
     .d-block {
         font-size: 15px;
     }
     .profile {
-        width: 300px;
+        width: 400px;
     }
     #about {
         width: auto;
@@ -105,6 +189,23 @@ section {
     .skill-set {
         width: 100%;
         margin: 0 auto;
+    }
+    .navbar {
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    #certificate {
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    #portfolio {
+        background-color: #273036;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
     }
 }
 
@@ -227,4 +328,114 @@ section {
 
 .bar.nine::before {
     width: calc(50% - 10px);
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(31, 29, 29);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: rgb(92, 86, 86);
+    transition: 0.3s;
+}
+
+.portfolio-box {
+    position: relative;
+    background-color: rgb(64, 64, 73);
+    border-radius: 10px;
+    height: 400px;
+    transform-style: preserve-3d;
+}
+
+.portfolio-box::before {
+    content: "MY";
+    position: absolute;
+    color: #fff;
+    font-size: 4em;
+    font-weight: bold;
+    font-style: italic;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.portfolio-box:hover::before {
+    opacity: 0.2;
+}
+
+.portfolio-box::after {
+    content: "KEYBOARD";
+    position: absolute;
+    color: #fff;
+    font-size: 3.5em;
+    font-weight: bold;
+    font-style: italic;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.portfolio-box:hover::after {
+    opacity: 0.2;
+}
+
+.portfolio-name {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translate3d(0, 0, 50px);
+}
+
+.portfolio-box:hover .portfolio-name {
+    top: 20px;
+    opacity: 1;
+}
+
+.portfolio-detail-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%, 0, 100px);
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 3;
+}
+
+.portfolio-box:hover .portfolio-detail-button {
+    opacity: 1;
+    bottom: 20px;
+}
+
+.keyboard-img {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate3d(-50%, -52%, 80px);
+    max-width: 350px;
+    transition: 0.5s;
+}
+
+.portfolio-box:hover .keyboard-img {
+    transform: translate3d(-50%, -52%, 100px) rotate(10deg) scale(1.2);
 }

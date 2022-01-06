@@ -24,28 +24,28 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#"><i class="bi bi-code-slash"></i> Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#home"><i class="bi bi-house-door-fill"></i> Beranda</a>
+                        <a class="nav-link" aria-current="page" href="#home"><i class="bi bi-house-door-fill"></i> Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about"><i class="bi bi-person-circle"></i> Biodata</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#certificate"><i class="bi bi-award-fill"></i> Sertifikat</a>
+                        <a class="nav-link" href="#certificate"><i class="bi bi-award-fill"></i> Certificate</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio"><i class="bi bi-briefcase-fill"></i> Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skill"><i class="bi bi-gear-fill"></i> Keterampilan</a>
+                        <a class="nav-link" href="#skill"><i class="bi bi-gear-fill"></i> Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact"><i class="bi bi-telephone-fill"></i> Kontak</a>
+                        <a class="nav-link" href="#contact"><i class="bi bi-telephone-fill"></i> Contact</a>
                     </li>
                 </ul>
             </div>
@@ -53,18 +53,25 @@
     </nav>
     <!-- Akhir Navbar -->
     <!-- Jumbotron -->
-    <section class="jumbotron text-center text-white bg bg-gradient" id="home">
-        <div class="container">
-            <img src="img/profile/personal.jpg" alt="Muhamad Arief Rahmatulloh" width="200" class="rounded-circle img-thumbnail" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
-            <h1 class="display-4 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"><b>Muhamad Arief Rahmatulloh</b></h1>
-            <p class="lead" data-aos="fade-up" data-aos-duration="1000">Mahasiswa | STT Mandala Bandung</p>
-            <div class="row justify-content-center mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-                <div class="col-md-0 ms-auto fs-5 text-center">
-                    Follow Me
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
+    <section class="jumbotron bg-dark" id="home">
+        <div class="container home text-white">
+            <div class="left text-center">
+                <img src="img/profile/personal.jpg" alt="Muhamad Arief Rahmatulloh" width="250" class="rounded-circle img-thumbnail" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                <div class="socmed me-2" data-aos="fade-up" data-aos-duration="900" data-aos-once="true">
+                    Ikuti Saya
                     <i class="bi bi-arrow-right"></i>
-                    <a href="https://instagram.com/muhamadariefr/" class="instagram text-decoration-none text-secondary"><i class="bi bi-instagram "></i></i></a>
-                    <a href="https://facebook.com " class="facebook text-decoration-none text-secondary"><i class="bi bi-facebook"></i></a>
-                    <a href="https://www.linkedin.com/in/muhamad-arief-rahmatulloh-b04a66207 " class="linkedin text-decoration-none text-secondary"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://instagram.com/muhamadariefr/" class="instagram2 text-decoration-none"><i class="bi bi-instagram"></i></i></a>
+                    <a href="https://facebook.com " class="facebook2 text-decoration-none"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/muhamad-arief-rahmatulloh-b04a66207 " class="linkedin2 text-decoration-none"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="right text-end text-white">
+                <h1 class="display-4 mt-3 ms-2 me-2" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"><b>Muhamad Arief Rahmatulloh</b></h1>
+                <p class="lead mt-2 ms-2 me-2" data-aos="fade-up" data-aos-duration="1100" data-aos-once="true">Mahasiswa | STT Mandala Bandung</p>
+                <p class="lead-2 ms-2 me-2" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Ini adalah situs web portofolio resmi saya untuk memamerkan semua karya saya yang terkait dengan pengembangan web, seni komik, dan desain grafis</p>
+                <div class="btn-download">
+                    <a class="btn btn-secondary shadow-none me-2 mb-2" data-aos="fade-up" data-aos-duration="1300" data-aos-once="true" href="#" download="CV" role="button">Download CV</a>
                 </div>
             </div>
         </div>
@@ -76,7 +83,7 @@
             <div data-aos="fade-up" data-aos-duration="800" data-aos-once="true" class="row text-center mb-3">
                 <div class="col">
                     <h2>Biodata</h2>
-                    <p class="text-start ms-5 me-5 pt-3 pb-3 ps-2 pe-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, molestias consectetur quod, mollitia corrupti quidem beatae necessitatibus reiciendis nobis tempora incidunt eligendi explicabo pariatur blanditiis cumque laudantium
+                    <p class="text-start ms-2 me-2 pt-3 pb-3 ps-2 pe-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, molestias consectetur quod, mollitia corrupti quidem beatae necessitatibus reiciendis nobis tempora incidunt eligendi explicabo pariatur blanditiis cumque laudantium
                         ullam voluptates maxime.</p>
                 </div>
             </div>
@@ -155,7 +162,7 @@
             <div class="row text-center mb-3 text-white" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
                 <div class="col">
                     <h2>Sertifikat</h2>
-                    <p class="text-start ms-5 me-5 pt-3 pb-3 ps-2 pe-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, molestias consectetur quod, mollitia corrupti quidem beatae necessitatibus reiciendis nobis tempora incidunt eligendi explicabo pariatur blanditiis cumque laudantium
+                    <p class="text-start ms-2 me-2 pt-3 pb-3 ps-2 pe-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, molestias consectetur quod, mollitia corrupti quidem beatae necessitatibus reiciendis nobis tempora incidunt eligendi explicabo pariatur blanditiis cumque laudantium
                         ullam voluptates maxime.</p>
                 </div>
             </div>
@@ -383,7 +390,7 @@
             <div class="row text-center mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
                 <div class="col">
                     <h2>Keterampilan</h2>
-                    <p class="text-start ms-5 me-5 pt-3 pb-3 ps-2 pe-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, earum nulla. Facere dignissimos, accusamus vero hic qui expedita eaque dolorem quos nihil aperiam voluptate quas dolore officia nostrum laboriosam impedit iste sequi,
+                    <p class="text-start ms-2 me-2 pt-3 pb-3 ps-2 pe-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, earum nulla. Facere dignissimos, accusamus vero hic qui expedita eaque dolorem quos nihil aperiam voluptate quas dolore officia nostrum laboriosam impedit iste sequi,
                         fuga consequuntur. Suscipit dicta eum odit quod exercitationem soluta, nulla neque doloremque tempore maxime quisquam obcaecati, fuga recusandae?</p>
                 </div>
             </div>
@@ -411,6 +418,74 @@
         </div>
     </section>
     <!-- Akhir Skill -->
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row text-center mb-3 text-white">
+                <div class="col">
+                    <h2>Portfolio</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="portfolio-box">
+                        <h4 class="portfolio-name">Portfolio 1</h4>
+                        <img src="img/portfolio/keyboard.png" alt="keyboard" class="keyboard-img">
+                        <a href="#" class="btn btn-secondary portfolio-detail-button">
+                        Lihat Detail
+                    </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="portfolio-box">
+                        <h4 class="portfolio-name">Portfolio 2</h4>
+                        <img src="img/portfolio/keyboard 2.png" alt="keyboard" class="keyboard-img">
+                        <a href="#" class="btn btn-secondary portfolio-detail-button">
+                        Lihat Detail
+                    </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="portfolio-box">
+                        <h4 class="portfolio-name">Portfolio 3</h4>
+                        <img src="img/portfolio/keyboard 3.png" alt="keyboard" class="keyboard-img">
+                        <a href="#" class="btn btn-secondary portfolio-detail-button">
+                        Lihat Detail
+                    </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="portfolio-box">
+                        <h4 class="portfolio-name">Portfolio 4</h4>
+                        <img src="img/portfolio/keyboard.png" alt="keyboard" class="keyboard-img">
+                        <a href="#" class="btn btn-secondary portfolio-detail-button">
+                        Lihat Detail
+                    </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="portfolio-box">
+                        <h4 class="portfolio-name">Portfolio 5</h4>
+                        <img src="img/portfolio/keyboard 2.png" alt="keyboard" class="keyboard-img">
+                        <a href="#" class="btn btn-secondary portfolio-detail-button">
+                        Lihat Detail
+                    </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="portfolio-box">
+                        <h4 class="portfolio-name">Portfolio 6</h4>
+                        <img src="img/portfolio/keyboard 3.png" alt="keyboard" class="keyboard-img">
+                        <a href="#" class="btn btn-secondary portfolio-detail-button">
+                        Lihat Detail
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Portfolio -->
 
     <!-- Contact -->
     <section id="contact">
@@ -462,8 +537,8 @@
     </section>
     <!-- Akhir Contact -->
     <!-- Footer -->
-    <footer class="bg text-white text-center pb-1 pt-2">
-        <p>&copy;2022 Portfolio Web | <a href="https://instagram.com/muhamadariefr " class="text-white fw-bold text-decoration-none ">Muhamad Arief Rahmatulloh</a></p>
+    <footer class="bg2 bg-dark text-white text-center pb-2 pt-3">
+        <p>&copy;2022 | <a href="https://instagram.com/muhamadariefr " class="text-white fw-bold text-decoration-none ">Muhamad Arief Rahmatulloh</a></p>
     </footer>
     <!-- Akhir Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js " integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0 " crossorigin="anonymous "></script>
@@ -471,7 +546,15 @@
     <script>
         AOS.init();
     </script>
-    <script src="load.js "></script>
+    <script src="load.js"></script>
+    <script src="scroll-top.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".portfolio-box"), {
+            max: 25,
+            speed: 400
+        });
+    </script>
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzmPz71TNbaeX4KdSM4ckQs4wmTd7U8XBeEH0pFfYOoZ20SwlKSvteGOLviDeoOgOJT/exec'
         const form = document.forms['contact-portfolio']
