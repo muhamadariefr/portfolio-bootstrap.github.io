@@ -2,6 +2,7 @@
 * {
     margin: 0px 0px;
     padding: 0px 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
     padding-top: 6rem;
     width: 100%;
     height: 100vh;
+    padding-bottom: 3em;
 }
 
 .home {
@@ -78,13 +80,13 @@ section {
 }
 
 .instagram2,
-.facebook2,
+.github,
 .linkedin2 {
     color: rgb(128, 125, 125);
 }
 
 .instagram2:hover,
-.facebook2:hover,
+.github:hover,
 .linkedin2:hover {
     color: #fff;
     transition: 0.3s;
@@ -134,6 +136,18 @@ section {
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .jumbotron {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .jumbotron {
+        height: auto;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .jumbotron {
         height: auto;
@@ -152,6 +166,9 @@ section {
         margin: 0;
         padding: 0;
     }
+    .left img {
+        width: 200px;
+    }
     .display-4 {
         font-size: 25px;
         text-align: center;
@@ -162,20 +179,25 @@ section {
     .lead {
         font-size: 18px;
         text-align: center;
+        padding-bottom: 10px;
     }
     .lead-2 {
-        font-size: 15px;
-        text-align: center;
-        padding-bottom: 50px;
+        font-size: 12px;
+        text-align: left;
+        padding-bottom: 10px;
     }
     .btn-download {
         margin: auto;
         text-align: center;
-        padding-bottom: 20px;
+        padding-bottom: 80px;
+    }
+    .bg2 {
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
     }
     .bio,
     .d-block {
-        font-size: 15px;
+        font-size: 13px;
     }
     .profile {
         width: 400px;
@@ -206,6 +228,85 @@ section {
         border-top-left-radius: 20px;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
+    }
+    .portfolio-box {
+        position: relative;
+        background-color: rgb(64, 64, 73);
+        border-radius: 10px;
+        width: auto;
+        height: 400px;
+        transform-style: preserve-3d;
+    }
+    .portfolio-box::before {
+        content: "MY";
+        position: absolute;
+        color: #fff;
+        font-size: 1em;
+        font-weight: bold;
+        font-style: italic;
+        top: 30px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .portfolio-box:hover::before {
+        opacity: 0.2;
+    }
+    .portfolio-box::after {
+        content: "KEYBOARD";
+        position: absolute;
+        color: #fff;
+        font-size: 1em;
+        font-weight: bold;
+        font-style: italic;
+        top: 300px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .portfolio-box:hover::after {
+        opacity: 0.2;
+    }
+    .portfolio-name {
+        width: auto;
+        position: absolute;
+        top: 0;
+        color: #fff;
+        text-align: center;
+        font-size: 1em;
+        opacity: 0;
+        transition: 0.5s;
+        transform: translate3d(0, 0, 10px);
+    }
+    .portfolio-box:hover .portfolio-name {
+        top: 20px;
+        opacity: 1;
+    }
+    .portfolio-detail-button {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate3d(-50%, 0, 20px);
+        opacity: 0;
+        transition: 0.5s;
+        z-index: 3;
+    }
+    .portfolio-box:hover .portfolio-detail-button {
+        opacity: 1;
+        bottom: 20px;
+    }
+    .keyboard-img {
+        position: absolute;
+        top: 52%;
+        left: 50%;
+        transform: translate3d(-50%, -52%, 15px);
+        width: 200px;
+        transition: 0.5s;
+    }
+    .portfolio-box:hover .keyboard-img {
+        transform: translate3d(-50%, -52%, 40px) rotate(10deg) scale(1.2);
     }
 }
 
@@ -357,6 +458,7 @@ section {
     border-radius: 10px;
     height: 400px;
     transform-style: preserve-3d;
+    overflow: hidden;
 }
 
 .portfolio-box::before {
@@ -438,4 +540,136 @@ section {
 
 .portfolio-box:hover .keyboard-img {
     transform: translate3d(-50%, -52%, 100px) rotate(10deg) scale(1.2);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: rgb(31, 29, 29);
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(92, 86, 86);
+}
+
+.timeline-edu {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline-edu::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: #273036;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.container-timeline {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.container-timeline::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12px;
+    background-color: #273036;
+    border: 4px solid #ff9f55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left-timeline {
+    left: 0;
+}
+
+.right-timeline {
+    left: 50%;
+}
+
+.left-timeline::before {
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #fff;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.right-timeline::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.right-timeline::after {
+    left: -13px;
+}
+
+.content-edu {
+    padding: 20px 30px;
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+    border-radius: 6px;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .timeline-edu::after {
+        left: 31px;
+    }
+    .container-timeline {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    .container-timeline::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+    .left-timeline::after,
+    .right-timeline::after {
+        left: 17px;
+    }
+    .right-timeline {
+        left: 0%;
+    }
 }
