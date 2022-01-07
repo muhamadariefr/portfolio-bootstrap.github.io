@@ -142,7 +142,7 @@ section {
     }
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1024px) {
     .jumbotron {
         height: auto;
     }
