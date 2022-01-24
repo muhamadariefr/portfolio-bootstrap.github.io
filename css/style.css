@@ -71,25 +71,29 @@ section {
 }
 
 .instagram,
-.twitter,
-.facebook,
-.envelope,
-.whatsapp,
+.github,
 .linkedin {
     color: #273036;
 }
 
+.instagram:hover,
+.github:hover,
+.linkedin:hover {
+    color: #000;
+    transition: 0.5s;
+}
+
 .instagram2,
-.github,
+.github2,
 .linkedin2 {
     color: rgb(128, 125, 125);
 }
 
 .instagram2:hover,
-.github:hover,
+.github2:hover,
 .linkedin2:hover {
     color: #fff;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 #preloader {
