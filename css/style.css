@@ -10,10 +10,29 @@ body {
 }
 
 .jumbotron {
-    padding-top: 6rem;
     width: 100%;
     height: 100vh;
     padding-bottom: 3em;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1360' height='768' preserveAspectRatio='none' viewBox='0 0 1360 768'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1016%26quot%3b)' fill='none'%3e%3crect width='1360' height='768' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0%2c463.701C82.629%2c441.469%2c143.984%2c380.715%2c221.802%2c345.131C316.87%2c301.659%2c439.98%2c311.63%2c507.353%2c231.701C578.533%2c147.254%2c602.603%2c24.882%2c583.421%2c-83.883C564.446%2c-191.474%2c489.04%2c-281.247%2c404.652%2c-350.633C328.345%2c-413.375%2c228.755%2c-428.532%2c133.301%2c-453.983C40.354%2c-478.765%2c-53.991%2c-525.302%2c-146.071%2c-497.472C-237.96%2c-469.7%2c-284.779%2c-373.257%2c-353.964%2c-306.712C-431.435%2c-232.197%2c-563.055%2c-189.543%2c-577.023%2c-82.963C-591.018%2c23.821%2c-464.143%2c93.572%2c-419.253%2c191.467C-374.463%2c289.142%2c-404.666%2c430.921%2c-314.544%2c489.44C-224.49%2c547.915%2c-103.686%2c491.598%2c0%2c463.701' fill='%230b2239'%3e%3c/path%3e%3cpath d='M1360 1196.2269999999999C1439.369 1191.664 1503.157 1137.661 1571.87 1097.676 1643.999 1055.703 1737.913 1032.33 1772.312 956.297 1806.701 880.2860000000001 1751.145 795.759 1746.141 712.481 1740.533 619.157 1801.4859999999999 509.149 1741.151 437.731 1680.973 366.499 1564.814 392.447 1471.69 387.617 1397.792 383.784 1328.427 399.275 1255.63 412.547 1173.347 427.549 1085.145 422.435 1016.74 470.563 939.525 524.89 851.8679999999999 600.836 853.855 695.227 855.886 791.692 973.629 839.537 1026.211 920.436 1068.566 985.602 1071.958 1073.468 1131.873 1122.973 1194.715 1174.896 1278.616 1200.906 1360 1196.2269999999999' fill='%23113255'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1016'%3e%3crect width='1360' height='768' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #0e2a47;
+}
+
+.btn-cv {
+    background-color: #0e2a47;
+    color: #fff;
+    border: #fff 1px solid;
+}
+
+.btn-cv:hover {
+    background-color: #061b31;
+    color: #fff;
+    transition: inherit;
 }
 
 .home {
@@ -24,6 +43,10 @@ body {
 .right {
     width: 60%;
     margin-top: 100px;
+}
+
+.bg2 {
+    background-color: #0e2a47;
 }
 
 .left {
@@ -53,13 +76,13 @@ body {
 }
 
 #portfolio {
-    background-color: #273036;
-    height: auto;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1360' height='768' preserveAspectRatio='none' viewBox='0 0 1360 768'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1054%26quot%3b)' fill='none'%3e%3crect width='1360' height='768' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0%2c671.335C123.679%2c641.765%2c156.184%2c477.423%2c257.07%2c400.008C345.472%2c332.172%2c481.298%2c339.388%2c548.46%2c250.473C620.168%2c155.54%2c634.181%2c28.577%2c627.35%2c-90.199C620.119%2c-215.917%2c611.84%2c-368.544%2c508.703%2c-440.794C402.894%2c-514.916%2c257.823%2c-429.693%2c128.993%2c-439.309C34.912%2c-446.331%2c-49.951%2c-499.815%2c-143.727%2c-489.49C-249.391%2c-477.857%2c-364.764%2c-456.718%2c-435.291%2c-377.182C-505.978%2c-297.465%2c-485.131%2c-176.662%2c-512.44%2c-73.678C-544.258%2c46.309%2c-640.511%2c158.067%2c-609.073%2c278.154C-577.036%2c400.53%2c-456.689%2c476.64%2c-350.41%2c545.248C-243.962%2c613.965%2c-123.228%2c700.797%2c0%2c671.335' fill='%230b2239'%3e%3c/path%3e%3cpath d='M1360 1261.478C1459.14 1263.645 1559.617 1261.146 1647.892 1215.969 1741.473 1168.077 1815.22 1090.7 1869.55 1000.704 1928.7 902.7239999999999 1974.963 794.489 1971.393 680.095 1967.5990000000002 558.54 1942.365 422.23 1849.062 344.226 1757.051 267.302 1619.507 306.862 1501.228 287.023 1399.968 270.038 1305.529 222.17700000000002 1203.788 235.99199999999996 1091.788 251.20000000000005 960.9169999999999 274.036 899.256 368.763 837.418 463.763 906.626 588.746 900.4929999999999 701.933 895.0799999999999 801.831 831.661 899.694 865.383 993.884 899.798 1090.01 990.2819999999999 1154.976 1080.083 1203.559 1165.619 1249.835 1262.771 1259.353 1360 1261.478' fill='%23113255'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1054'%3e%3crect width='1360' height='768' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    height: 100vh;
     padding: 50px 0px 50px 0px;
 }
 
 #certificate {
-    background-color: #273036;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1360' height='1280' preserveAspectRatio='none' viewBox='0 0 1360 1280'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1039%26quot%3b)' fill='none'%3e%3crect width='1360' height='1280' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0%2c542.026C100.297%2c552.35%2c192.286%2c484.505%2c270.41%2c420.766C342.786%2c361.717%2c390.428%2c280.914%2c425.935%2c194.518C460.354%2c110.769%2c483.489%2c21.96%2c471.177%2c-67.745C458.818%2c-157.791%2c411.589%2c-236.65%2c356.805%2c-309.173C298.808%2c-385.949%2c234.651%2c-460.042%2c146.208%2c-497.938C51.466%2c-538.533%2c-64.164%2c-576.898%2c-155.198%2c-528.556C-246.827%2c-479.898%2c-234.959%2c-340.82%2c-300.741%2c-260.594C-363.693%2c-183.818%2c-495.404%2c-169.986%2c-526.516%2c-75.702C-557.695%2c18.784%2c-509.698%2c124.609%2c-455.355%2c207.954C-404.965%2c285.236%2c-311.24%2c313.977%2c-236.853%2c368.551C-156.318%2c427.636%2c-99.36%2c531.798%2c0%2c542.026' fill='%230b2239'%3e%3c/path%3e%3cpath d='M1360 1743.0529999999999C1445.594 1729.308 1482.105 1627.5 1544.945 1567.78 1594.073 1521.091 1655.391 1489.092 1689.1 1430.295 1724.92 1367.816 1745.632 1297.06 1741.3690000000001 1225.167 1736.884 1149.524 1714.6190000000001 1072.984 1664.542 1016.113 1614.6399999999999 959.442 1539.269 937.379 1467.443 914.082 1393.71 890.1669999999999 1318.44 864.614 1242.3029999999999 879.162 1162.154 894.476 1076.103 927.47 1033.416 997.0129999999999 991.5799999999999 1065.1680000000001 1025.813 1151.972 1025.7559999999999 1231.943 1025.708 1299.13 1015.871 1364.348 1033.109 1429.286 1052.974 1504.12 1076.63 1580.399 1132.488 1634.0149999999999 1194.414 1693.454 1275.25 1756.663 1360 1743.0529999999999' fill='%23113255'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1039'%3e%3crect width='1360' height='1280' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
 
 section {
@@ -142,21 +165,24 @@ section {
 
 @media only screen and (max-width: 800px) {
     .jumbotron {
-        height: auto;
+        height: 100%;
     }
 }
 
 @media only screen and (max-width: 1024px) {
     .jumbotron {
-        height: auto;
+        height: 100%;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .jumbotron {
-        height: auto;
+        height: 100%;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
+    }
+    .navbar {
+        background-color: #0e2a47;
     }
     .home {
         display: block;
@@ -227,90 +253,8 @@ section {
         border-bottom-left-radius: 20px;
     }
     #portfolio {
-        background-color: #273036;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        border-bottom-left-radius: 20px;
-    }
-    .portfolio-box {
-        position: relative;
-        background-color: rgb(64, 64, 73);
-        border-radius: 10px;
-        width: auto;
-        height: 400px;
-        transform-style: preserve-3d;
-    }
-    .portfolio-box::before {
-        content: "MY";
-        position: absolute;
-        color: #fff;
-        font-size: 1em;
-        font-weight: bold;
-        font-style: italic;
-        top: 30px;
-        left: 50%;
-        transform: translate(-50%, 0);
-        opacity: 0;
-        transition: 0.5s;
-    }
-    .portfolio-box:hover::before {
-        opacity: 0.2;
-    }
-    .portfolio-box::after {
-        content: "KEYBOARD";
-        position: absolute;
-        color: #fff;
-        font-size: 1em;
-        font-weight: bold;
-        font-style: italic;
-        top: 300px;
-        left: 50%;
-        transform: translate(-50%, 0);
-        opacity: 0;
-        transition: 0.5s;
-    }
-    .portfolio-box:hover::after {
-        opacity: 0.2;
-    }
-    .portfolio-name {
-        width: auto;
-        position: absolute;
-        top: 0;
-        color: #fff;
-        text-align: center;
-        font-size: 1em;
-        opacity: 0;
-        transition: 0.5s;
-        transform: translate3d(0, 0, 10px);
-    }
-    .portfolio-box:hover .portfolio-name {
-        top: 20px;
-        opacity: 1;
-    }
-    .portfolio-detail-button {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate3d(-50%, 0, 20px);
-        opacity: 0;
-        transition: 0.5s;
-        z-index: 3;
-    }
-    .portfolio-box:hover .portfolio-detail-button {
-        opacity: 1;
-        bottom: 20px;
-    }
-    .keyboard-img {
-        position: absolute;
-        top: 52%;
-        left: 50%;
-        transform: translate3d(-50%, -52%, 15px);
-        width: 200px;
-        transition: 0.5s;
-    }
-    .portfolio-box:hover .keyboard-img {
-        transform: translate3d(-50%, -52%, 40px) rotate(10deg) scale(1.2);
+        height: auto;
+        padding: 50px 0px 50px 0px;
     }
 }
 
@@ -456,96 +400,6 @@ section {
     transition: 0.3s;
 }
 
-.portfolio-box {
-    position: relative;
-    background-color: rgb(64, 64, 73);
-    border-radius: 10px;
-    height: 400px;
-    transform-style: preserve-3d;
-    overflow: hidden;
-}
-
-.portfolio-box::before {
-    content: "MY";
-    position: absolute;
-    color: #fff;
-    font-size: 4em;
-    font-weight: bold;
-    font-style: italic;
-    top: 30px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.portfolio-box:hover::before {
-    opacity: 0.2;
-}
-
-.portfolio-box::after {
-    content: "KEYBOARD";
-    position: absolute;
-    color: #fff;
-    font-size: 3.5em;
-    font-weight: bold;
-    font-style: italic;
-    top: 300px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.portfolio-box:hover::after {
-    opacity: 0.2;
-}
-
-.portfolio-name {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    color: #fff;
-    text-align: center;
-    font-size: 2em;
-    opacity: 0;
-    transition: 0.5s;
-    transform: translate3d(0, 0, 50px);
-}
-
-.portfolio-box:hover .portfolio-name {
-    top: 20px;
-    opacity: 1;
-}
-
-.portfolio-detail-button {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate3d(-50%, 0, 100px);
-    opacity: 0;
-    transition: 0.5s;
-    z-index: 3;
-}
-
-.portfolio-box:hover .portfolio-detail-button {
-    opacity: 1;
-    bottom: 20px;
-}
-
-.keyboard-img {
-    position: absolute;
-    top: 52%;
-    left: 50%;
-    transform: translate3d(-50%, -52%, 80px);
-    max-width: 350px;
-    transition: 0.5s;
-}
-
-.portfolio-box:hover .keyboard-img {
-    transform: translate3d(-50%, -52%, 100px) rotate(10deg) scale(1.2);
-}
-
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -648,7 +502,7 @@ section {
 
 .content-edu {
     padding: 20px 30px;
-    background: rgba(0, 0, 0, 0.6);
+    background: #0e2a47;
     position: relative;
     border-radius: 6px;
     color: #fff;

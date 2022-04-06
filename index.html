@@ -21,7 +21,7 @@
 <body>
     <div id="preloader"></div>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#"><i class="bi bi-code-slash"></i> Portfolio</a>
             <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,13 +54,13 @@
     <!-- Akhir Navbar -->
     <!-- Jumbotron -->
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
-    <section class="jumbotron bg-dark" id="home">
+    <section class="jumbotron" id="home">
         <div class="container home text-white">
             <div class="left text-center">
                 <img src="img/profile/personal.jpg" alt="Muhamad Arief Rahmatulloh" width="250" class="rounded-circle img-thumbnail" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
                 <div class="socmed me-2" data-aos="fade-up" data-aos-duration="900" data-aos-once="true">
                     <a href="https://instagram.com/muhamadariefr/" class="instagram2 text-decoration-none"><i class="bi bi-instagram"></i></i></a>
-                    <a href="https://github.com " class="github2 text-decoration-none"><i class="bi bi-github"></i></i></a>
+                    <a href="https://github.com/muhamadariefr" class="github2 text-decoration-none"><i class="bi bi-github"></i></i></a>
                     <a href="https://www.linkedin.com/in/muhamad-arief-rahmatulloh-b04a66207 " class="linkedin2 text-decoration-none"><i class="bi bi-linkedin"></i></a>
                 </div>
             </div>
@@ -69,7 +69,7 @@
                 <p class="lead mt-2 ms-2 me-2" data-aos="fade-up" data-aos-duration="1100" data-aos-once="true">Mahasiswa | STT Mandala Bandung</p>
                 <p class="lead-2 ms-2 me-2" data-aos="fade-up" data-aos-duration="1100" data-aos-once="true">This is my official portfolio website to showcase all my work related to web development, comic art and graphic design</p>
                 <div class="btn-download">
-                    <a class="btn btn-secondary shadow-none me-2 mb-2" data-aos="fade-up" data-aos-duration="1100" data-aos-once="true" href="#" download="CV" role="button">Download CV</a>
+                    <a class="btn btn-cv shadow-none me-2 mb-2" data-aos="fade-up" data-aos-duration="1100" data-aos-once="true" href="#" download="CV" role="button">Download CV</a>
                 </div>
             </div>
         </div>
@@ -535,34 +535,67 @@
             <div class="row text-center mb-3 text-white">
                 <div class="col">
                     <h2>Portfolio</h2>
+                    <p class="text-start ms-2 me-2 pt-3 pb-3 ps-2 pe-2">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum aliquid eveniet accusamus molestias totam sunt eligendi accusantium! Nostrum totam, esse dolor optio cupiditate, molestiae excepturi autem laboriosam cum ullam tenetur.
+                    </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="portfolio-box">
-                        <h4 class="portfolio-name">Portfolio 1</h4>
-                        <img src="img/portfolio/keyboard.png" alt="keyboard" class="keyboard-img">
-                        <a href="#" class="btn btn-secondary portfolio-detail-button">
-                        Lihat Detail
-                    </a>
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <button type="button" class="btn btn-white shadow-none" data-bs-toggle="modal" data-bs-target="#exampleModal">    
+                            <img src="img/design/messi.jpg" class="img-thumbnail" alt="..." width="200">
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/design/messi.jpg" class="img-thumbnail" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="portfolio-box">
-                        <h4 class="portfolio-name">Portfolio 2</h4>
-                        <img src="img/portfolio/keyboard 2.png" alt="keyboard" class="keyboard-img">
-                        <a href="#" class="btn btn-secondary portfolio-detail-button">
-                        Lihat Detail
-                    </a>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <button type="button" class="btn btn-white shadow-none" data-bs-toggle="modal" data-bs-target="#exampleModal2">    
+                            <img src="img/design/neymar.jpg" class="img-thumbnail" alt="..." width="200">
+                        </button>
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/design/neymar.jpg" class="img-thumbnail" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="portfolio-box">
-                        <h4 class="portfolio-name">Portfolio 3</h4>
-                        <img src="img/portfolio/keyboard 3.png" alt="keyboard" class="keyboard-img">
-                        <a href="#" class="btn btn-secondary portfolio-detail-button">
-                        Lihat Detail
-                    </a>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <button type="button" class="btn btn-white shadow-none" data-bs-toggle="modal" data-bs-target="#exampleModal3">    
+                            <img src="img/design/CR7.jpg" class="img-thumbnail" alt="..." width="200">
+                        </button>
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/design/CR7.jpg" class="img-thumbnail" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -586,7 +619,7 @@
                     </div>
                     <form name="contact-portfolio">
                         <div class="mb-3">
-                            <label for="name" class="form-label">Nama Lengkap</label>
+                            <label for="name" class="form-label">Full Name</label>
                             <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
                         </div>
                         <div class="mb-3">
@@ -594,10 +627,10 @@
                             <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
                         </div>
                         <div class="mb-3">
-                            <label for="pesan" class="form-label">Pesan</label>
+                            <label for="pesan" class="form-label">Message</label>
                             <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-dark btn-kirim">Kirim Pesan</button>
+                        <button type="submit" class="btn btn-dark btn-kirim">Send</button>
                         <button class="btn btn-dark btn-loading d-none" type="button" disabled>
                             <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                             Loading...
@@ -617,7 +650,7 @@
     </section>
     <!-- Akhir Contact -->
     <!-- Footer -->
-    <footer class="bg2 bg-dark text-white text-center pb-2 pt-3">
+    <footer class="bg2 text-white text-center pb-2 pt-3">
         <p>&copy;2022 | <a href="https://instagram.com/muhamadariefr " class="text-white fw-bold text-decoration-none ">Muhamad Arief Rahmatulloh</a></p>
     </footer>
     <!-- Akhir Footer -->
@@ -658,6 +691,17 @@
                     console.log('Success!', response)
                 })
                 .catch(error => console.error('Error!', error.message))
+        });
+    </script>
+    <script type="text/javascript">
+        var nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 100) {
+                nav.classList.add('sticky');
+            } else {
+                nav.classList.remove('sticky');
+            }
         });
     </script>
 </body>
